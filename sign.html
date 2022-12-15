@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/ja.js"></script>
+    <title>Sign</title>
+</head>
+<body>
+    <div id="container">
+        <h1>회원가입</h1>
+        <form method="post" onsubmit="return validate()" enctype="text/plain">
+            <fieldset>
+                <div class="form-row">
+                    <div class="id">
+                        <label for="my_id">아이디</label>
+                        <input type="text" class="form-control" name="my_id" id="my_id" size="12" maxlength="12" placeholder="4~12글자의 대소문자">
+                    </div>
+                    <div class="pwd">
+                        <label for="my_pwd">비밀번호</label>
+                        <input type="password" class="form-control" name="my_pwd" id="my_pwd" maxlength="12" placeholder="4~12글자의 대소문자와 숫자">
+                    </div>
+                    <div class="pwd2">
+                        <label for="my_pwd2">비밀번호 확인</label>
+                        <input type="password" class="form-control" name="my_pwd2" id="my_pwd2" maxlength="12" placeholder="비밀번호 확인">
+                    </div>
+                    <div class="name">
+                        <label for="my_name">이름</label>
+                        <input type="text" class="form-control" name="my_name" id="my_name" maxlength="10" placeholder="이름">
+                    </div>
+                    <div class="phone">
+                        <label for="my_pnumber">전화번호</label>
+                        <input type="tel" class="form-control" name="my_pnumber" id="my_pnumber" maxlength="13" placeholder="전화번호">
+                    </div>
+                    <div class="mail">
+                        <label for="my_mail">메일주소</label>
+                        <input type="email" class="form-control" name="my_mail" id="my_mail" placeholder="abcd@naver.com">
+                    </div>
+                    <div class="year">
+                        <label for="my_year">생년월일</label>
+                                <input type="text" class="form-control" name="my_year" id="my_year" maxlength="4" placeholder="년도">
+                                <span class="input-group-text">년</span>
+                            <select name="month" id="month" class="custom-select">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                                <label class="input-group-text" for="month">월</label>
+                            <select name="day" id="day" class="custom-select">
+                                <option value="1" selected="selected">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <label class="input-group-text" for="day">일</label>
+                    </div>
+                    <div>
+                        <input type="submit" name="submit" value="회원 가입"/>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        </table>
+        <br><br>
+        <a href="index.html">홈페이지로 돌아가기</a>
+    </div>
+</body>
+</html>

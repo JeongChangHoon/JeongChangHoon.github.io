@@ -1,0 +1,90 @@
+div, header, section, footer {
+    padding : 15px;
+}
+#container {
+    background-color: rgb(253, 255, 163);
+    background-size: cover;
+    height: 100vh;
+}
+div.head {
+    position:absolute;
+    left: 50%;
+}
+.nav {
+    margin: 0 auto;
+}
+ul.menu {
+    padding: 0px;
+    list-style: none;
+}
+ul.menu li {
+    float : left;
+    width: 195px;
+    height: 2.3em;
+    text-align: center;
+    background-color: #ff7300;
+    border-right: 1px solid #fffb00;
+    box-shadow: 1px 1px 8px rgb(255, 153, 0);
+
+}
+ul.menu li:first-child {
+    border-radius: .5em 0 0 .5em;
+}
+ul.menu li:last-child {
+    border-radius: 0 .5em .5em 0;
+    border: none;
+}
+ul.menu li a {
+    display: block;
+    padding-top: 7px;
+    text-decoration: none;
+    color: #292929;
+}
+ul.menu li:hover a {
+    color: #fff;
+    text-decoration: underline;
+}
+table td.intro{
+    font-size: 20px;
+    font-weight: bold;
+    color : #000000;
+}
+.card {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 30px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    cursor: pointer;
+    overflow-y:scroll;
+    display: inline-block;
+}
+.card p {
+    transform: translate(320px, 0);
+}
+.transition {
+    opacity: .3;
+    transition: .7s;
+}
+.card:hover .transition {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+.top {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+.submit-btn input {
+    float: right;
+}
+#tbl-member {
+    margin: 0px;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+#tbl-member th, #tbl-member td {
+    border: 1px solid #000000;
+    padding: 10px;
+}
